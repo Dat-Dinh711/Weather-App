@@ -5,6 +5,10 @@
   "main": "main.js",
   "author": "Dat Dinh",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dat-Dinh711/Weather-App"
+  },
   "scripts": {
     "ng": "ng",
     "start": "electron-forge start",
@@ -14,7 +18,8 @@
     "start:electron": "ng build && nodemon --watch main.js --exec electron .",
     "electron": "electron .",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "make": "electron-forge make",
+    "publish": "electron-forge publish"
   },
   "private": true,
   "dependencies": {
@@ -26,10 +31,12 @@
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
+    "dotenv": "^16.0.3",
     "electron-squirrel-startup": "^1.0.0",
     "nodemon": "^2.0.20",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
+    "update-electron-app": "^2.0.1",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
@@ -41,6 +48,7 @@
     "@electron-forge/maker-rpm": "^6.0.4",
     "@electron-forge/maker-squirrel": "^6.0.4",
     "@electron-forge/maker-zip": "^6.0.4",
+    "@electron-forge/publisher-github": "^6.0.4",
     "@types/jasmine": "~4.0.0",
     "electron": "^22.0.0",
     "jasmine-core": "~4.1.0",

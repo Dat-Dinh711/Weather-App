@@ -1,6 +1,6 @@
-const { app, BrowserWindow, ipcMain } = require("electron");
+const { app, BrowserWindow } = require("electron");
 
-// require("update-electron-app")();
+require("update-electron-app")();
 
 const createWindow = () => {
   const mainWindow = new BrowserWindow({
@@ -8,7 +8,6 @@ const createWindow = () => {
     height: 600,
   });
 
-  ipcMain.handle("ping", () => "pong");
   mainWindow.loadFile("dist/weather-app/index.html");
 };
 

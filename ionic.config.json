@@ -1,0 +1,12 @@
+{
+  "defaultProject": "WeatherApp",
+  "projects": {
+    "WeatherApp": {
+      "name": "WeatherApp",
+      "integrations": {
+        "capacitor": {}
+      },
+      "type": "angular"
+    }
+  }
+}
